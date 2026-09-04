@@ -26,27 +26,27 @@ export const fallbackSkills = [
 export const fallbackExperience = [
   {
     id: 1,
-    period: '2023 — Sekarang',
-    title: 'Mahasiswa Desain Komunikasi Visual / Informatika',
-    place: 'Nama Kampus Kamu',
+    period: 'July 2025 - July 2026',
+    title: 'President of Taekwondo Student Activity Unit',
+    place: 'Universitas AMIKOM Yogyakarta',
     description:
-      'Fokus pada mata kuliah terkait UI/UX dan pengembangan web. Mengerjakan beberapa proyek riset pengguna dan desain antarmuka sebagai tugas kuliah.',
+      'Led and managed over 50+ active members and a core committee of 13 to run weekly training sessions and organizational programs. Oversaw the strategic planning, budgeting, and execution for championship preparations and internal campus events. Coordinated with the university’s student affairs department and external sports federations (like TI/Pengprov) regarding permits, funding, and event registrations.',
   },
   {
     id: 2,
-    period: '2024',
-    title: 'UI/UX Design Intern (contoh, ganti sesuai pengalamanmu)',
-    place: 'Nama Perusahaan / Organisasi',
+    period: 'September 2024 - August 2025',
+    title: 'Member of Student Senate, Organization Commission',
+    place: 'Universitas AMIKOM Yogyakarta',
     description:
-      'Membantu proses riset pengguna dan pembuatan wireframe untuk salah satu fitur produk. Berkolaborasi dengan tim frontend untuk memastikan desain bisa diimplementasikan.',
+      'Formulated and revised organizational regulations and policies to ensure structured governance among student bodies. Facilitated mediation and strategic alignment between the university’s student affairs department and various student organizations.',
   },
   {
     id: 3,
-    period: '2023',
-    title: 'Anggota Divisi Desain, Organisasi Kampus (contoh)',
-    place: 'Nama Organisasi',
+    period: 'August 2025 - October 2025',
+    title: 'UI/UX Designer',
+    place: 'LPK Saitama (Japanese Language & Work Training Center)',
     description:
-      'Membuat materi visual dan mendesain antarmuka untuk website/aplikasi internal organisasi.',
+      'Designed user-centered UI/UX wireframes, user flows, and high-fidelity prototypes for a student learning application. Conducted user research and user testing with students to gather insights, creating an intuitive and seamless learning experience. Created and maintained a consistent design system, including typography, color palettes, and UI components to optimize the application’s visual identity.',
   },
 ]
 

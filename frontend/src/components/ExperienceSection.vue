@@ -5,9 +5,9 @@ defineProps({
 </script>
 
 <template>
-  <section id="pengalaman" class="border-t border-line">
+  <section id="experience" class="border-t border-line">
     <div class="max-w-content mx-auto px-6 md:px-10 py-20 md:py-28">
-      <h2 v-reveal class="font-display text-3xl md:text-4xl mb-16">Pengalaman</h2>
+      <h2 v-reveal class="font-display text-3xl md:text-4xl mb-16">Experience</h2>
 
       <div class="relative">
         <div class="absolute left-0 top-2 bottom-2 w-px bg-line hidden sm:block"></div>

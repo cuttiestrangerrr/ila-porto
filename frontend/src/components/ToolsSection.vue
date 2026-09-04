@@ -28,7 +28,7 @@ const groupedTools = computed(() => {
 <template>
   <section id="tools" class="border-t border-line">
     <div class="max-w-content mx-auto px-6 md:px-10 py-20 md:py-28">
-      <h2 v-reveal class="font-display text-3xl md:text-4xl mb-4">Tools yang dipakai</h2>
+      <h2 v-reveal class="font-display text-3xl md:text-4xl mb-4">Tools</h2>
       <p v-reveal class="text-ink-soft max-w-xl mb-16">
         Aplikasi dan software yang biasa saya pakai sehari-hari untuk mendesain dan membangun antarmuka.
       </p>
