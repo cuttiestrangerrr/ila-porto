@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --ink: #004ef5;
+  --ink-soft: #ff0004;
+  --accent: #004ef5;
+  --accent-red: #ff0004;
+  --accent-soft: rgba(0, 78, 245, 0.12);
+  --accent-red-soft: rgba(255, 0, 4, 0.12);
+  --line: rgba(0, 78, 245, 0.2);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+html,
+body,
+#app {
+  min-height: 100vh;
+}
+
+#app {
+  background: transparent;
+}
+
+/* Scroll Reveal Animations (Smooth & Gracefully Slower) */
+.reveal,
+.reveal-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.88) translateY(20px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.active,
+.reveal-up.active,
+.reveal-left.active,
+.reveal-right.active,
+.reveal-scale.active {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Continuous Infinite Ambient Animations */
+@keyframes float-ambient {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulse-glow-ambient {
+
+  0%,
+  100% {
+    box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.3), 0 0 20px rgba(56, 189, 248, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 15px 40px -10px rgba(244, 114, 182, 0.5), 0 0 30px rgba(168, 85, 247, 0.35);
+    border-color: rgba(244, 114, 182, 0.45);
+  }
+}
+
+@keyframes gradient-shift-infinite {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-float {
+  animation: float-ambient 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: pulse-glow-ambient 7s ease-in-out infinite;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.55;
+  position: relative;
+}
+
+/* Galaxy Nebula Background Glow */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(67, 29, 48, 0.35), transparent 45%),
+    radial-gradient(circle at 85% 25%, rgba(20, 58, 74, 0.525), transparent 50%),
+    radial-gradient(circle at 50% 70%, rgba(40, 22, 61, 0.45), transparent 55%),
+    radial-gradient(circle at 80% 85%, rgb(40, 3, 14), transparent 45%),
+    linear-gradient(180deg, #1b0052 0%, #0b0422 45%, #0a072a 100%);
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* Galaxy Twinkling Stars Particle Layer */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image:
+    radial-gradient(2px 2px at 25px 35px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 80px 140px, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 150px 60px, #e2e8f0, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 220px 240px, rgba(255, 255, 255, 0.95), rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 290px 110px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 360px 320px, rgba(83, 36, 255, 0.9), rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 430px 180px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(2.5px 2.5px at 500px 70px, rgba(56, 189, 248, 0.95), rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 580px 290px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 650px 130px, rgba(255, 255, 255, 0.85), rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 720px 380px, #f472b6, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 790px 210px, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 860px 50px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 930px 310px, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 990px 160px, #38bdf8, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 1000px 500px;
+  animation: stars-twinkle 7s ease-in-out infinite alternate;
+  opacity: 0.9;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes stars-twinkle {
+  0% {
+    opacity: 0.65;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+
+  100% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.underline-link {
+  background-image: linear-gradient(90deg, #38bdf8, #ff2d55);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.25s ease;
+  padding-bottom: 2px;
+}
+
+.underline-link:hover,
+.underline-link:focus-visible {
+  background-size: 100% 2px;
+}
+
+.gradient-text,
+.gradient-name {
+  background: linear-gradient(135deg,
+      hsl(236, 100%, 56%) 20%,
+      hsl(272, 75%, 49%) 50%,
+      hsl(0, 98%, 53%) 100%);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift-infinite 5s ease-in-out infinite;
+}
+
+.field-underline {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-bottom: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0.75rem 0.5rem;
+  color: #ffffff;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.field-underline:focus {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
