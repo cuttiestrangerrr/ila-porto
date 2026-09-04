@@ -14,6 +14,8 @@ const initials = computed(() => {
 
 const links = [
   { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Tools', href: '#tools' },
   { label: 'Projects', href: '#projects' },
 ]
 </script>

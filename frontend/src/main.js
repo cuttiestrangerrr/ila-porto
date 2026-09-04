@@ -51,7 +51,7 @@ if (typeof window !== 'undefined') {
 
     const observeNodes = () => {
       const targetElements = document.querySelectorAll(
-        '.reveal, .reveal-up, .reveal-left, .reveal-right, .reveal-scale'
+        '.reveal, .reveal-up, .reveal-left, .reveal-right, .reveal-scale, .reveal-contact'
       )
       targetElements.forEach((el) => observer.observe(el))
     }

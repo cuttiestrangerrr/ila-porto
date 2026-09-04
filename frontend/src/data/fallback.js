@@ -51,12 +51,11 @@ export const fallbackExperience = [
 ]
 
 export const fallbackTools = [
-  { id: 1, name: 'Figma', category: 'Design' },
-  { id: 2, name: 'Adobe XD', category: 'Design' },
-  { id: 3, name: 'Notion', category: 'Productivity' },
-  { id: 4, name: 'VS Code', category: 'Development' },
-  { id: 5, name: 'GitHub', category: 'Development' },
-  { id: 6, name: 'Google Sheets', category: 'Productivity' },
+  { id: 1, name: 'Figma', category: 'Design', icon: '/images/tools/figma.png' },
+  { id: 2, name: 'Notion', category: 'Productivity', icon: '/images/tools/notion.png' },
+  { id: 3, name: 'VS Code', category: 'Development', icon: '/images/tools/vscode.png' },
+  { id: 4, name: 'GitHub', category: 'Development', icon: '/images/tools/github.png' },
+  { id: 5, name: 'Google Sheets', category: 'Productivity', icon: '/images/tools/googlesheets.png' },
 ]
 
 export const fallbackProjects = [

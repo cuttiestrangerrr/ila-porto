@@ -71,13 +71,40 @@ body,
   will-change: opacity, transform;
 }
 
+.reveal-contact {
+  opacity: 0;
+  transform: perspective(1000px) rotateX(15deg) scale(0.92) translateY(50px);
+  transition: opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1), transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
 .reveal.active,
 .reveal-up.active,
 .reveal-left.active,
 .reveal-right.active,
-.reveal-scale.active {
+.reveal-scale.active,
+.reveal-contact.active {
   opacity: 1;
-  transform: translateY(0) translateX(0) scale(1);
+  transform: translateY(0) translateX(0) scale(1) rotateX(0deg);
+}
+
+@keyframes contact-orb-float {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate(25px, -20px) scale(1.2);
+    opacity: 0.75;
+  }
+}
+
+.animate-contact-orb-1 {
+  animation: contact-orb-float 9s ease-in-out infinite;
+}
+
+.animate-contact-orb-2 {
+  animation: contact-orb-float 12s ease-in-out infinite reverse;
 }
 
 /* Continuous Infinite Ambient Animations */
