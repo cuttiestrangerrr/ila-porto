@@ -85,13 +85,13 @@ export const fallbackProjects = [
   },
   {
     id: 3,
-    title: 'Student Financial Tracker App',
-    slug: 'student-financial-tracker-app',
+    title: 'UI/UX Design for LPK Saitama Learning Management System',
+    slug: 'uiux-design-lpk-saitama',
     role: 'UI/UX Designer',
     summary:
-      'A mobile application concept created to assist university students in tracking daily expenses quickly and efficiently.',
-    cover_image: '/images/projects/keuangan.jpg',
-    tools: ['Figma', 'Google Forms'],
+      'LPK Saitama is a mobile application .',
+    cover_image: '/images/projects/LPKSaitama.png',
+    tools: ['Figma'],
     project_url: null,
     featured: false,
   },
