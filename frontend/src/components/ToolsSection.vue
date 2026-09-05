@@ -9,6 +9,7 @@ function getToolIcon(tool) {
   if (tool.icon) return tool.icon
   if (tool.image) return tool.image
   const slug = (tool.name || '').toLowerCase().replace(/[^a-z0-9]/g, '')
+  if (slug === 'figma') return '/images/tools/figma.jpg'
   return `/images/tools/${slug}.png`
 }
 

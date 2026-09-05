@@ -51,7 +51,7 @@ export const fallbackExperience = [
 ]
 
 export const fallbackTools = [
-  { id: 1, name: 'Figma', category: 'Design', icon: '/images/tools/figma.png' },
+  { id: 1, name: 'Figma', category: 'Design', icon: '/images/tools/figma.jpg' },
   { id: 2, name: 'Notion', category: 'Productivity', icon: '/images/tools/notion.png' },
   { id: 3, name: 'VS Code', category: 'Development', icon: '/images/tools/vscode.png' },
   { id: 4, name: 'GitHub', category: 'Development', icon: '/images/tools/github.png' },
