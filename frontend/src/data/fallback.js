@@ -79,7 +79,7 @@ export const fallbackProjects = [
     summary:
       'A web-based admin dashboard designed to help online store owners monitor products, sales, and orders effortlessly.',
     cover_image: '/images/projects/EmpatBerlian.png',
-    tools: ['Figma', 'HTML', 'CSS', 'JavaScript'],
+    tools: ['Figma', 'PHP', 'Laravel', 'CSS', 'JavaScript'],
     project_url: 'https://www.figma.com/design/aZweQ83fWt7KNOWf32fFub/UI_EmpatBerlian?node-id=0-1&t=QLwaG3zV24RJb02f-1',
     featured: true,
   },
