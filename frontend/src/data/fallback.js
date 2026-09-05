@@ -89,22 +89,10 @@ export const fallbackProjects = [
     slug: 'uiux-design-lpk-saitama',
     role: 'UI/UX Designer',
     summary:
-      'LPK Saitama is a mobile application .',
+      'LPK Saitama is a learning app designed to help students prepare for their language and skills training before departing to work or study in Japan. The design process began with research into students learning habits, followed by wireframing the course flow, and concluded with a ready-to-implement interface.',
     cover_image: '/images/projects/LPKSaitama.png',
     tools: ['Figma'],
-    project_url: null,
-    featured: false,
-  },
-  {
-    id: 4,
-    title: 'Student Financial Tracker App',
-    slug: 'student-financial-tracker-app',
-    role: 'UI/UX Designer',
-    summary:
-      'A mobile application concept created to assist university students in tracking daily expenses quickly and efficiently.',
-    cover_image: '/images/projects/keuangan.jpg',
-    tools: ['Figma', 'Google Forms'],
-    project_url: null,
+    project_url: 'https://www.figma.com/proto/jq5PNUpVDQx5LLk0eU6i3d/LPK-Saitama?node-id=24-417&page-id=0%3A1&starting-point-node-id=15%3A8&t=WUGl0sUZOQI3i6ke-1',
     featured: false,
   },
 ]
